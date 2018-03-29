@@ -4,6 +4,36 @@ body {
 	background-color: white;
 	position: center;
 	width: 900px;
+	height: 2600px;
 	margin-right: auto;
 	margin-left: auto;
 	}
+
+footer {
+	background-color: #b3b3ff;
+	position: fixed;
+	bottom: 0;
+	width: 900px;
+	height:35px;
+	text-align: center;
+	}
+
+#header {
+	color:red;
+	background-color: #ffc9c9;
+	display: inline-block;
+	width:700px;
+	height: 100px;
+	position: relative;
+	}
+	
+#sidebar {
+	color: green;
+	background-color: #c5ffd7;
+	display: inline-block;
+	position: static;
+	float: right;
+	width: 200px;
+	height: 2600px;
+	}
+	
