@@ -4,18 +4,26 @@ body {
 	background-color: white;
 	position: center;
 	width: 900px;
-	height: 2600px;
+	height: auto;
+	min-height: 900px;
 	margin-right: auto;
 	margin-left: auto;
 	}
 
 footer {
 	background-color: #b3b3ff;
+	display: block;
 	position: fixed;
+/* 	How in the hell do I position this at page bottom? */
 	bottom: 0;
 	width: 900px;
-	height:35px;
+	height: 35px;
 	text-align: center;
+	}
+	
+#footertext {
+	line-height: 35px;
+	vertical-align: middle;
 	}
 
 #header {
@@ -26,7 +34,25 @@ footer {
 	height: 100px;
 	position: relative;
 	}
-	
+
+#scrollbanner {
+	width:700px;
+	height: 25px;
+	display: block;
+	position: relative;
+	background-color: #fff7d0;
+	text-align: center;
+	}
+
+.navlink {
+	display:inline-block;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	vertical-align: middle;
+	line-height: 25px;
+	}
+
 #sidebar {
 	color: green;
 	background-color: #c5ffd7;
@@ -34,6 +60,7 @@ footer {
 	position: static;
 	float: right;
 	width: 200px;
-	height: 2600px;
+	height: auto;
+	min-height: 900px;
 	}
 	
