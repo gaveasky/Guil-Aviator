@@ -2,28 +2,39 @@ html {
 	background: url(backdrop.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	font-family: 'Roboto Slab', serif;
 }	
 
 body {
 	margin: auto;
 	width: 900px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .grid {
 	height: auto;
 	display: grid;
-	grid-template: 105px auto 45px /5fr 2fr;
-	grid-gap: 5px;
+	grid-template: auto auto auto /5fr 2fr;
+	grid-gap: 10px;
 }
 
 .box {
 	background-color: white;
 	padding: 15px;
-	box-shadow: inset 1px 1px 5px black
+	box-shadow: inset 1px 1px 5px black;
+	border-radius: 3px;
 }
 
 .b {
 	grid-column: 2;
-	grid-row: 1 / span 4;
+	grid-row: 1 / span 3;
+}
+
+.box .box {
+	border: 2px solid red;
+	margin-bottom: 10px;
+	padding: 5px !important;
+	box-shadow: none !important;
+	text-align: center;
 }
