@@ -1,66 +1,29 @@
-html {background-color: #dcdcdc;}
+html {
+	background: url(backdrop.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}	
 
 body {
-	background-color: white;
-	position: center;
-	width: 900px;
-	height: auto;
-	min-height: 900px;
-	margin-right: auto;
-	margin-left: auto;
-	}
-
-footer {
-	background-color: #b3b3ff;
-	display: block;
-	position: fixed;
-/* 	How in the hell do I position this at page bottom? */
-	bottom: 0;
-	width: 900px;
-	height: 35px;
-	text-align: center;
-	}
-	
-#footertext {
-	line-height: 35px;
-	vertical-align: middle;
-	}
-
-#header {
-	color:red;
-	background-color: #ffc9c9;
-	display: inline-block;
-	width:700px;
-	height: 100px;
-	position: relative;
-	}
-
-#scrollbanner {
-	width:700px;
-	height: 25px;
-	display: block;
-	position: relative;
-	background-color: #fff7d0;
-	text-align: center;
-	}
-
-.navlink {
-	display:inline-block;
 	margin: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	vertical-align: middle;
-	line-height: 25px;
-	}
+	width: 900px;
+	padding-top: 20px;
+}
 
-#sidebar {
-	color: green;
-	background-color: #c5ffd7;
-	display: inline-block;
-	position: static;
-	float: right;
-	width: 200px;
+.grid {
 	height: auto;
-	min-height: 900px;
-	}
-	
+	display: grid;
+	grid-template: 105px auto 45px /5fr 2fr;
+	grid-gap: 5px;
+}
+
+.box {
+	background-color: white;
+	padding: 15px;
+	box-shadow: inset 1px 1px 5px black
+}
+
+.b {
+	grid-column: 2;
+	grid-row: 1 / span 4;
+}
