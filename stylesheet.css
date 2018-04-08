@@ -1,5 +1,5 @@
 html {
-	background: url(backdrop.jpg);
+	background: #f2f2f2;
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: 'Roboto Slab', serif;
@@ -16,14 +16,15 @@ body {
 	height: auto;
 	display: grid;
 	grid-template: auto auto auto /5fr 2fr;
-	grid-gap: 10px;
+	grid-gap: 7px;
 }
 
 .box {
 	background-color: white;
-	padding: 15px;
-	box-shadow: inset 1px 1px 5px black;
-	border-radius: 3px;
+	padding: 3px;
+	outline: 1px solid grey;
+	box-shadow: 1px 1px 5px #131313;
+	border-radius: 1px;
 }
 
 .b {
@@ -31,10 +32,48 @@ body {
 	grid-row: 1 / span 3;
 }
 
+.e {
+	background-color: #fff159;
+	height: 50px;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	color: #00007f;
+}
+
 .box .box {
-	border: 2px solid red;
+/* 	border: 2px solid red; */
 	margin-bottom: 10px;
+	border-bottom: 1px solid grey ;
 	padding: 5px !important;
 	box-shadow: none !important;
 	text-align: center;
 }
+codathemebanner {
+	border-radius: 3px;
+}
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+h2 {
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+	
+.d, a, .footertext {
+	text-align: center;
+	color: #bebebe;
+	padding: 1px;
+	font-size: 13px;
+	display: inline-block;
+}
+
+.social {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+	top: 7px;
+	}
